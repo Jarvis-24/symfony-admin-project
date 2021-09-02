@@ -26,11 +26,6 @@ class ModelCrudController extends AbstractCrudController
         return [
             TextField::new('name'),
             AssociationField::new('make'),
-//                CollectionField::new('make')
-//                    // callables also receives the entire entity instance as the second argument
-//                    ->formatValue(function ($value, $entity) {
-//                        return $entity->getMake()->getName();
-//                    })
         ];
 
     }

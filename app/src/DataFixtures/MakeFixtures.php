@@ -12,8 +12,6 @@ class MakeFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
-        // $product = new Product();
-        // $manager->persist($product);
 
         $file_path = getcwd().'/../assignment/make-model.json';
 

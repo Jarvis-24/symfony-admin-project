@@ -17,7 +17,6 @@ class DashboardController extends AbstractDashboardController
      */
     public function index(): Response
     {
-//           return parent::index();
         return $this->render('admin/my-custom-page.html.twig');
     }
 
@@ -31,7 +30,6 @@ class DashboardController extends AbstractDashboardController
     public function configureMenuItems(): iterable
     {
         yield MenuItem::linktoDashboard('Dashboard', 'fa fa-home');
-
          yield MenuItem::linkToCrud('Make', 'fas fa-list', Make::class);
          yield MenuItem::linkToCrud('Model', 'fas fa-list', Model::class);
     }

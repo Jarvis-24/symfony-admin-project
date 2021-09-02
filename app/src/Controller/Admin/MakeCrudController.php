@@ -31,9 +31,7 @@ class MakeCrudController extends AbstractCrudController
     public function configureFields(string $pageName): iterable
     {
         return [
-//            IdField::new('id'),
             TextField::new('name'),
-//            AssociationField::new('models'),
             AssociationField::new('models')
                 ->setFormTypeOptions([
                     'by_reference' => false,
